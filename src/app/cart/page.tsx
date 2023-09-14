@@ -13,6 +13,8 @@ export default function Cart() {
         
         */}
         <Banner banner='롯데'/>
+        <Btn color="red" />
+        <Btn color="blue" />
       </div>
     )
   }
@@ -40,6 +42,10 @@ function CartItem(props: {product: string[], test: number}) { // 코드스플릿
 
 function Banner(props: {banner: string}) {
     return <div>{props.banner} 행사중!</div>
+}
+
+function Btn(props: {color: string}){
+    return <button style={{ background : props.color }}>버튼임</button>
 }
 
 
