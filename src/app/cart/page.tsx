@@ -20,7 +20,7 @@ export default function Cart() {
   }
 
 //컴포넌트 만들기 - 재사용이 많은것만 만들기, 코드를 간결하고 재사용에 용이, 페이지 규모가 엄청 클때
-function CartItem(props: {product: string[], test: number}) { // 코드스플릿을 위해 여기에 다쓰지 않고 파일로 분리시킴
+function CartItem(props: {product: string[], test: number}) {
     // props로 넘겨줄 값을 {} 안에 작명: type을 적어준다.
     //cart에 product변수를 CartItem에서 쓸 수 없으므로 props로 내려준다.
     return(
